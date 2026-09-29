@@ -1,22 +1,27 @@
 import { createI18n } from 'vue-i18n';
 import ko from './locales/ko.json';
 import en from './locales/en.json';
+import zh from './locales/zh.json';
 
 const STORAGE_KEY = 'wedding-locale';
 
-export const messages = { ko, en };
+export const messages = { ko, en, zh };
 export type Locale = keyof typeof messages;
 
 export function detectLocale(): Locale {
   const saved = localStorage.getItem(STORAGE_KEY);
   if (saved && saved in messages) return saved as Locale;
-  return navigator.language.startsWith('en') ? 'en' : 'ko';
+  const lang = navigator.language.toLowerCase();
+  if (lang.startsWith('zh')) return 'zh';
+  if (lang.startsWith('en')) return 'en';
+  if (lang.startsWith('ko')) return 'ko';
+  return 'zh';
 }
 
 export const i18n = createI18n({
   legacy: false,
   locale: detectLocale(),
-  fallbackLocale: 'ko',
+  fallbackLocale: 'zh',
   messages,
 });
 

@@ -1,0 +1,286 @@
+{
+  "nav": {
+    "menu": "主菜单",
+    "home": "首页",
+    "map": "地图",
+    "guestbook": "留言簿",
+    "game": "游戏",
+    "photo": "相册"
+  },
+  "common": {
+    "confirm": "确定",
+    "cancel": "取消",
+    "close": "关闭",
+    "back": "返回",
+    "like": "喜欢",
+    "namePlaceholder": "请输入姓名",
+    "passwordLength": "密码请设置为 5-30 位",
+    "deletePrompt": "请输入密码以删除",
+    "wrongPassword": "密码错误",
+    "deleteFailed": "删除失败"
+  },
+  "app": {
+    "switchLanguage": "切换语言",
+    "localeLabel": "中",
+    "share": "分享请柬",
+    "showUi": "显示界面",
+    "hideUi": "隐藏界面",
+    "dayMode": "切换到白天模式",
+    "nightMode": "切换到夜晚模式",
+    "shareTitle": "{groom} ♥ {bride} 诚邀您参加我们的婚礼",
+    "anonymousPrefix": "匿名_",
+    "linkCopied": "链接已复制",
+    "hofCongrats": "恭喜！",
+    "hofAllAchieved": "已完成全部挑战！",
+    "hofLeaveName": "请在名人堂留下你的名字",
+    "hofAnonymous": "匿名记录"
+  },
+  "notFound": {
+    "message": "找不到该页面",
+    "goHome": "返回首页"
+  },
+  "dialog": {
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "name": "姓名",
+    "message": "留言",
+    "messagePlaceholder": "请输入留言"
+  },
+  "home": {
+    "untilWedding": "距离婚礼",
+    "thankYou": "感谢您的祝福",
+    "groomParents": "男方父母",
+    "brideParents": "女方父母",
+    "gift": "送上祝福",
+    "groomSide": "男方",
+    "brideSide": "女方",
+    "copy": "复制",
+    "copyAccountAria": "复制{name}的账号",
+    "accountCopied": "账号已复制"
+  },
+  "map": {
+    "title": "交通指引",
+    "subtitle": "查看路线，轻松到达婚礼现场！",
+    "address": "地址",
+    "copyAddress": "复制地址",
+    "copied": "已复制！",
+    "openInAria": "用{provider}导航",
+    "charterBus": "大巴接送",
+    "charterBusNotice": "大巴乘车须知",
+    "transport": "交通信息",
+    "subway": "地铁",
+    "bus": "公交",
+    "car": "自驾",
+    "venueContact": "场地联系电话",
+    "providers": {
+      "tmap": "Tmap",
+      "google": "谷歌地图",
+      "kakao": "Kakao 地图",
+      "naver": "Naver 地图"
+    }
+  },
+  "guestbook": {
+    "title": "留言簿",
+    "subtitle": "给新人留下祝福吧！",
+    "nameLabel": "姓名",
+    "messageLabel": "留言",
+    "messagePlaceholder": "写下你的祝福...",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "修改/删除时需要（5-30 位）",
+    "secret": "悄悄话",
+    "secretHint": "只有新人能看到",
+    "submitting": "提交中...",
+    "submit": "提交",
+    "emptyLine1": "还没有留言。",
+    "emptyLine2": "来写下第一条祝福吧！",
+    "editAria": "修改",
+    "deleteAria": "删除",
+    "editTitle": "修改留言",
+    "enterPassword": "请输入密码",
+    "submitFailed": "留言提交失败",
+    "verifyFailed": "验证失败",
+    "updateFailed": "修改失败",
+    "unsavedConfirm": "有未保存的内容，确定要离开吗？"
+  },
+  "game": {
+    "title": "翻牌配对",
+    "subtitle": "在限定时间内找出所有相同的图片！",
+    "rankAchieved": "获得第 {rank} 名！",
+    "congrats": "恭喜！",
+    "instruction": "在 {seconds} 秒内找出相同的图片",
+    "start": "开始游戏",
+    "leaderboard": "排行榜",
+    "viewAllPhotos": "查看全部照片",
+    "pairCounter": "{matched}/{total} 对",
+    "match": "配对了！",
+    "won": "成功！",
+    "elapsed": "用时：{seconds} 秒",
+    "initialsLabel": "请输入首字母（英文 3 位）",
+    "saving": "保存中...",
+    "saveScore": "保存成绩",
+    "playAgain": "再玩一次",
+    "timeUp": "时间到！",
+    "pairsMatched": "你配对了 {matched}/{total} 对",
+    "retry": "再试一次",
+    "photoLoadFailed": "照片加载失败",
+    "scoreSaveFailed": "成绩保存失败"
+  },
+  "photo": {
+    "title": "相册",
+    "subtitle": "分享婚礼现场的照片吧！",
+    "availableFrom": "照片上传将于婚礼前 {duration} 开放",
+    "durationDays": "{n} 天",
+    "durationHours": "{n} 小时",
+    "unitDays": "天",
+    "unitHours": "小时",
+    "unitMinutes": "分",
+    "unitSeconds": "秒",
+    "notReady": "照片上传功能尚未开放",
+    "tryLater": "请稍后再试",
+    "nameLabel": "姓名",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "删除时需要（5-30 位）",
+    "openCamera": "打开相机",
+    "choosePhoto": "选择照片",
+    "previewAlt": "预览",
+    "uploading": "上传中...",
+    "uploadingProgress": "上传中... {done}/{total}",
+    "addMore": "添加照片",
+    "editHint": "点击照片即可编辑",
+    "removePhotoAria": "移除照片",
+    "upload": "上传",
+    "uploadCount": "上传 {n} 张",
+    "sortRecent": "最新",
+    "sortPopular": "最热",
+    "empty": "还没有照片",
+    "menuAria": "菜单",
+    "deletePhoto": "删除照片",
+    "uploadSuccess": "照片已上传！\n待管理员审核后显示。",
+    "uploadDisabled": "照片上传已关闭",
+    "uploadFailed": "照片上传失败",
+    "uploadPartialFailed": "{n} 张照片上传失败。\n请重试。",
+    "deleted": "照片已删除",
+    "unsavedConfirm": "有已选择的照片，确定要离开吗？"
+  },
+  "photoEditor": {
+    "reset": "重置",
+    "done": "完成",
+    "tabs": {
+      "crop": "裁剪",
+      "adjust": "调整"
+    },
+    "ratios": {
+      "free": "自由",
+      "square": "1:1",
+      "landscape": "4:3",
+      "portrait": "3:4"
+    },
+    "filters": {
+      "original": "原图",
+      "warm": "暖色",
+      "cool": "冷色",
+      "sepia": "复古",
+      "grayscale": "黑白",
+      "vivid": "鲜艳"
+    },
+    "adjustments": {
+      "brightness": "亮度",
+      "contrast": "对比度",
+      "saturation": "饱和度"
+    }
+  },
+  "lightbox": {
+    "viewer": "图片查看器",
+    "photoAlt": "照片 {current}/{total}",
+    "prev": "上一张",
+    "next": "下一张"
+  },
+  "achievementsView": {
+    "title": "挑战",
+    "progress": "已完成 {earned}/{total}",
+    "medalNote": "金/银/铜牌任达成一个即算通过",
+    "localOnly": "挑战进度仅保存在当前浏览器"
+  },
+  "hallOfFame": {
+    "title": "名人堂",
+    "subtitle": "达成全部挑战的宾客",
+    "empty": "名人堂暂时还没有人。"
+  },
+  "achievements": {
+    "gallery": {
+      "name": "解锁相册",
+      "description": "通关游戏解锁婚礼照片"
+    },
+    "gold": {
+      "name": "金牌",
+      "description": "获得第 1 名"
+    },
+    "silver": {
+      "name": "银牌",
+      "description": "获得第 2 名及以上"
+    },
+    "bronze": {
+      "name": "铜牌",
+      "description": "获得第 3 名及以上"
+    },
+    "guestbook": {
+      "name": "祝福留言",
+      "description": "在留言簿留言"
+    },
+    "photo": {
+      "name": "摄影师",
+      "description": "完成照片上传"
+    },
+    "heart": {
+      "name": "初次点赞",
+      "description": "给照片点赞"
+    },
+    "gallery_all": {
+      "name": "相册达人",
+      "description": "查看全部游戏照片"
+    },
+    "theme": {
+      "name": "室内设计师",
+      "description": "点击主题切换按钮"
+    },
+    "speed": {
+      "name": "极速通关",
+      "description": "10 秒内通关游戏"
+    },
+    "wedding_day": {
+      "name": "婚礼当天",
+      "description": "在婚礼当天访问"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "intro": "本请柬为提供留言、照片上传、游戏记录等功能并防止重复参与和滥用，会收集和使用以下信息。",
+    "collectLabel": "收集内容",
+    "collectBody": "昵称、留言、上传的照片、访问 IP（单向哈希后存储）",
+    "purposeLabel": "使用目的",
+    "purposeBody": "运营请柬功能、防止重复参与、拦截不当内容",
+    "retentionLabel": "保存与销毁",
+    "retentionBody": "收集的信息不会用于请柬运营以外的用途，婚礼结束后或经请求时删除。",
+    "selfManage": "留言和照片可用注册时设置的密码自行修改或删除。"
+  },
+  "errors": {
+    "invalid_request_body": "请求无效",
+    "invalid_id": "项目无效",
+    "not_found": "找不到该项目",
+    "wrong_password": "密码错误",
+    "nickname_required": "请输入姓名",
+    "nickname_length": "姓名请控制在 20 字以内",
+    "nickname_format": "首字母请使用 3 位英文大写字母",
+    "message_length": "留言请控制在 1-500 字",
+    "password_length": "密码请设置为 5-30 位",
+    "name_required": "请输入姓名（最多 50 字）",
+    "file_too_large": "文件过大（最大 10MB）",
+    "image_required": "请选择图片文件",
+    "image_files_only": "只能上传图片文件",
+    "unsupported_image_format": "不支持的图片格式",
+    "game_token_required": "游戏会话已过期，请重试",
+    "invalid_game_session": "游戏会话无效，请重试",
+    "time_range": "记录无效",
+    "network": "网络错误"
+  }
+}

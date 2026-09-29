@@ -1,28 +1,28 @@
 // ─── Names ───
-export let GROOM_ENG_NAME = 'Groom';
-export let GROOM_KOR_NAME = '김철수';
-export let BRIDE_ENG_NAME = 'Bride';
-export let BRIDE_KOR_NAME = '이영희';
-export let GROOM_FATHER_KOR_NAME = '김아버지';
-export let GROOM_MOTHER_KOR_NAME = '박어머니';
-export let BRIDE_FATHER_KOR_NAME = '이아버지';
-export let BRIDE_MOTHER_KOR_NAME = '최어머니';
+export let GROOM_ENG_NAME = 'Tao';
+export let GROOM_KOR_NAME = '陶先生';
+export let BRIDE_ENG_NAME = 'Li';
+export let BRIDE_KOR_NAME = '李女士';
+export let GROOM_FATHER_KOR_NAME = '陶父';
+export let GROOM_MOTHER_KOR_NAME = '陶母';
+export let BRIDE_FATHER_KOR_NAME = '李父';
+export let BRIDE_MOTHER_KOR_NAME = '李母';
 
 // ─── Bank Accounts ───
-export let GROOM_BANK_ACCOUNT = '카카오뱅크 0000-00-0000000';
-export let BRIDE_BANK_ACCOUNT = '은행 000-000000-00000';
-export let GROOM_FATHER_BANK_ACCOUNT = '은행 000-000000-00000';
-export let GROOM_MOTHER_BANK_ACCOUNT = '은행 000-000000-00000';
-export let BRIDE_FATHER_BANK_ACCOUNT = '은행 000-000000-00000';
-export let BRIDE_MOTHER_BANK_ACCOUNT = '은행 000-000000-00000';
+export let GROOM_BANK_ACCOUNT = '请填写';
+export let BRIDE_BANK_ACCOUNT = '请填写';
+export let GROOM_FATHER_BANK_ACCOUNT = '请填写';
+export let GROOM_MOTHER_BANK_ACCOUNT = '请填写';
+export let BRIDE_FATHER_BANK_ACCOUNT = '请填写';
+export let BRIDE_MOTHER_BANK_ACCOUNT = '请填写';
 
 // ─── Wedding Details ───
-export let WEDDING_DATETIME = new Date('2030-01-01T11:00:00+09:00');
-export let VENUE_NAME = 'OO웨딩홀';
-export let VENUE_ADDRESS = '서울특별시 중구 세종대로 110';
-export let VENUE_FLOOR = '3층';
-export let VENUE_HALL = '그랜드홀';
-export let VENUE_PHONE = '02-000-0000';
+export let WEDDING_DATETIME = new Date('2027-01-01T11:00:00+08:00');
+export let VENUE_NAME = '湖南省岳阳市';
+export let VENUE_ADDRESS = '湖南省岳阳市';
+export let VENUE_FLOOR = '';
+export let VENUE_HALL = '';
+export let VENUE_PHONE = '';
 
 // ─── Map Providers ───
 export interface MapLinks {
@@ -54,14 +54,9 @@ export let MAP_PROVIDERS: MapProviders = {
 };
 
 // ─── Transport Info ───
-export let SUBWAY_INFO = ['1호선', '시청역 1번 출구 도보 5분 거리'];
-export let BUS_INFO: { stop: string; routes: string }[] = [
-  {
-    stop: '시청역 1번 출구 정류장',
-    routes: '100, 200, 300',
-  },
-];
-export let CAR_INFO = '웨딩홀 전용 주차장 이용 가능';
+export let SUBWAY_INFO = [''];
+export let BUS_INFO: { stop: string; routes: string }[] = [];
+export let CAR_INFO = '';
 export let CHARTER_BUS: {
   location: string;
   company: string;
@@ -71,8 +66,8 @@ export let CHARTER_BUS: {
 export let CHARTER_BUS_NOTICE = '';
 
 // ─── Birth Order ───
-export let GROOM_BIRTH_ORDER = '장남';
-export let BRIDE_BIRTH_ORDER = '장녀';
+export let GROOM_BIRTH_ORDER = '';
+export let BRIDE_BIRTH_ORDER = '';
 
 // ─── Game ───
 export let CARD_GAME_TIMER = 30000;
@@ -91,84 +86,12 @@ export let PHOTO_UPLOAD_ENABLED = false;
 export let PHOTO_UPLOAD_HOURS_BEFORE = 1;
 
 // ─── Greeting ───
-export let SHORT_GREETING = '저희 결혼합니다';
+export let SHORT_GREETING = '我们要结婚啦';
 export let MAIN_GREET_TEXT =
-  '소중한 분들을 초대합니다.\n함께 축복해 주시면 더없는 기쁨으로 간직하겠습니다.';
+  '诚挚邀请您参加我们的婚礼\n与我们共同见证这份幸福';
 
 // ─── Demo Mode ───
 export let DEMO_MODE = false;
 
-// ─── Runtime Config Loader ───
-export async function loadConfig(): Promise<void> {
-  try {
-    const res = await fetch('/api/config');
-    if (!res.ok) return;
-    const c = await res.json();
-
-    if (c.demo === true) DEMO_MODE = true;
-
-    if (c.groom_eng_name) GROOM_ENG_NAME = c.groom_eng_name;
-    if (c.groom_kor_name) GROOM_KOR_NAME = c.groom_kor_name;
-    if (c.bride_eng_name) BRIDE_ENG_NAME = c.bride_eng_name;
-    if (c.bride_kor_name) BRIDE_KOR_NAME = c.bride_kor_name;
-    if (c.groom_father_kor_name)
-      GROOM_FATHER_KOR_NAME = c.groom_father_kor_name;
-    if (c.groom_mother_kor_name)
-      GROOM_MOTHER_KOR_NAME = c.groom_mother_kor_name;
-    if (c.bride_father_kor_name)
-      BRIDE_FATHER_KOR_NAME = c.bride_father_kor_name;
-    if (c.bride_mother_kor_name)
-      BRIDE_MOTHER_KOR_NAME = c.bride_mother_kor_name;
-
-    if (c.groom_bank_account) GROOM_BANK_ACCOUNT = c.groom_bank_account;
-    if (c.bride_bank_account) BRIDE_BANK_ACCOUNT = c.bride_bank_account;
-    if (c.groom_father_bank_account)
-      GROOM_FATHER_BANK_ACCOUNT = c.groom_father_bank_account;
-    if (c.groom_mother_bank_account)
-      GROOM_MOTHER_BANK_ACCOUNT = c.groom_mother_bank_account;
-    if (c.bride_father_bank_account)
-      BRIDE_FATHER_BANK_ACCOUNT = c.bride_father_bank_account;
-    if (c.bride_mother_bank_account)
-      BRIDE_MOTHER_BANK_ACCOUNT = c.bride_mother_bank_account;
-
-    if (c.wedding_datetime) {
-      WEDDING_DATETIME = new Date(c.wedding_datetime);
-    }
-
-    if (c.venue_name) VENUE_NAME = c.venue_name;
-    if (c.venue_address) VENUE_ADDRESS = c.venue_address;
-    if (c.venue_floor) VENUE_FLOOR = c.venue_floor;
-    if (c.venue_hall) VENUE_HALL = c.venue_hall;
-    if (c.venue_phone) VENUE_PHONE = c.venue_phone;
-
-    if (c.map_providers) MAP_PROVIDERS = c.map_providers;
-
-    if (c.subway_info) SUBWAY_INFO = c.subway_info;
-    if (c.bus_info) BUS_INFO = c.bus_info;
-    if (c.car_info) CAR_INFO = c.car_info;
-    if (c.charter_bus) CHARTER_BUS = c.charter_bus;
-    if (c.charter_bus_notice) CHARTER_BUS_NOTICE = c.charter_bus_notice;
-
-    if (c.groom_birth_order) GROOM_BIRTH_ORDER = c.groom_birth_order;
-    if (c.bride_birth_order) BRIDE_BIRTH_ORDER = c.bride_birth_order;
-
-    if (c.card_game_timer) CARD_GAME_TIMER = c.card_game_timer;
-    if (c.game_npc_message) GAME_NPC_MESSAGE = c.game_npc_message;
-
-    if (c.avatar_colors) AVATAR_COLORS = c.avatar_colors;
-    if (c.short_greeting) SHORT_GREETING = c.short_greeting;
-    if (c.main_greet_text) MAIN_GREET_TEXT = c.main_greet_text;
-
-    if (c.photo_upload_enabled === true) PHOTO_UPLOAD_ENABLED = true;
-    if (
-      typeof c.photo_upload_hours_before === 'number' &&
-      c.photo_upload_hours_before >= 0
-    )
-      PHOTO_UPLOAD_HOURS_BEFORE = c.photo_upload_hours_before;
-
-    if (c.main_photo_url) MAIN_PHOTO_URL = c.main_photo_url;
-    if (c.game_photo_count != null) GAME_PHOTO_COUNT = c.game_photo_count;
-  } catch {
-    // silently use defaults
-  }
-}
+// Static deployment: all values above are the single source of truth.
+// There is no backend, so no runtime config loading.

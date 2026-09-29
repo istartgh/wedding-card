@@ -10,7 +10,7 @@ export function useWeddingDate() {
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
-      timeZone: 'Asia/Seoul',
+      timeZone: 'Asia/Shanghai',
     });
     return locale.value === 'ko' ? formatted.replace(/\. /g, '. ') : formatted;
   });
@@ -18,7 +18,7 @@ export function useWeddingDate() {
   const day = computed(() =>
     WEDDING_DATETIME.toLocaleDateString(locale.value, {
       weekday: 'long',
-      timeZone: 'Asia/Seoul',
+      timeZone: 'Asia/Shanghai',
     }),
   );
 
@@ -27,7 +27,7 @@ export function useWeddingDate() {
       hour: 'numeric',
       minute: '2-digit',
       hour12: true,
-      timeZone: 'Asia/Seoul',
+      timeZone: 'Asia/Shanghai',
     }),
   );
 

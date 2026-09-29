@@ -3,12 +3,10 @@ import App from './App.vue';
 import router from './router';
 import { i18n } from './i18n';
 import './style.css';
-import { loadConfig } from './config/wedding';
 
-loadConfig().then(() => {
-  createApp(App).use(router).use(i18n).mount('#app');
+createApp(App).use(router).use(i18n).mount('#app');
 
-  console.log(
+console.log(
     `%c
    .mPMMNNHHmo.       _, n!it6XHm.
  ,8PMWWHHKKDDXY8.   _o86SSXXDDKKH8b.
@@ -34,6 +32,5 @@ i8WHKDDS65Yttcc==++>+>++==ccttY56SDd8
 
  You found me! check out https://github.com/RunFridge/wedding-card
 `,
-    'color: #e91e63; font-family: monospace;',
-  );
-});
+  'color: #e91e63; font-family: monospace;',
+);

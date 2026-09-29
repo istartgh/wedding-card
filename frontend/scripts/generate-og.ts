@@ -36,18 +36,18 @@ const dateStr = dt
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
-    timeZone: 'Asia/Seoul',
+    timeZone: 'Asia/Shanghai',
   })
   .replace(/\. /g, '. ');
 const dayStr = dt.toLocaleDateString('ko-KR', {
   weekday: 'long',
-  timeZone: 'Asia/Seoul',
+  timeZone: 'Asia/Shanghai',
 });
 const timeStr = dt.toLocaleTimeString('ko-KR', {
   hour: 'numeric',
   minute: '2-digit',
   hour12: true,
-  timeZone: 'Asia/Seoul',
+  timeZone: 'Asia/Shanghai',
 });
 
 const WIDTH = 1200;
